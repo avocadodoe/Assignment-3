@@ -1,0 +1,82 @@
+import java.util.*;
+
+public class Card {
+    
+    private int faceValue; //faceValues go from 1-13 where 1 = A, 11 = J, 12 = Q, 13 = K
+    private int suitType; //suitTypes are 0-3 (4 total): Spaces, Hearts, Diamonds, Clubs
+    private String face_Value, suit_Type;
+    
+    public void card() { //constructor: give the intial values
+        setFaceValue(2);
+        setSuitType(2);
+    }
+    
+    public int getFaceValue() {
+        return faceValue;
+    }
+    
+    public String displayFaceValue() {
+        if (faceValue == 1) {
+            face_Value = "A";
+        }
+        else if (faceValue == 11) {
+            face_Value = "J";
+        }
+        else if (faceValue == 12) {
+            face_Value = "Q";
+        }
+        else if (faceValue == 13) {
+            face_Value = "K";
+        }
+        else {
+            face_Value = Integer.toString(faceValue);
+        }
+        return face_Value;
+    }
+
+    public void setFaceValue(int faceValue) {
+        if (faceValue < 14 && faceValue > 0) {
+            this.faceValue = faceValue;
+        }
+        else {
+            System.out.println ("Please enter a face value between 1 - 13");
+        }
+    }
+
+    public String getSuitType() {
+        if (suitType == 0) {
+            suit_Type = "Diamonds";
+        }
+        else if (suitType == 1) {
+            suit_Type = "Hearts";
+        }
+        else if (suitType == 2) {
+            suit_Type = "Spades";
+        }
+        else if (suitType == 3) {
+            suit_Type = "Clubs";
+        }
+        
+        return suit_Type;
+    }
+
+    public void setSuitType(int suitType) {
+        if (suitType >= 0 && suitType < 4) {
+            this.suitType = suitType;
+        }
+        else {
+            System.out.println("Please enter a suit type value between 0 - 3");
+        }
+    }
+    
+    public void draw() {
+        Random rand = new Random();
+        //draw the face value
+        faceValue = rand.nextInt(13) + 1;
+        
+        //draw the suit type
+        suitType = rand.nextInt(4);
+    }
+    
+    
+}
