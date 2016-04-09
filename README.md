@@ -22,4 +22,7 @@ Problem One:
 		e. If one of Sum 1 and Sum2 is larger than 21, and the other is lower than 21, the lower one wins.
 
 Requirement:
-1. Make sure your code is clearly indented. 2. Make constructor, setter/getter, service method of Card class are provided.
+
+1. Make sure your code is clearly indented.
+
+2. Make constructor, setter/getter, service method of Card class are provided.
