@@ -1,6 +1,6 @@
 # Blackjack
 
-CSC 280 - Assignment Three
+CSC 280 - Assignment 3
 
 Problem One:
 
