@@ -19,7 +19,6 @@ Problem One:
 		b. Do a summation of all the cards’ face value of Player 2, say Sum2;
 		c. If both Sum1 and Sum2 are less than 21, whichever is closer to 21 wins;
 		d. If both Sum1 and Sum2 are larger than 21, tie;
-		
 		e. If one of Sum 1 and Sum2 is larger than 21, and the other is lower than 21, the lower one wins.
 
 Requirement:
